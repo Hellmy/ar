@@ -118,11 +118,12 @@
 	//		add an object in the scene
 	//////////////////////////////////////////////////////////////////////////////////
 
-var geometry = new THREE.PlaneGeometry( 5, 5, 5 );
+var geometry = new THREE.PlaneGeometry( 3, 3, 3 );
 var material = new THREE.MeshBasicMaterial( {side: THREE.DoubleSide,
 		map : THREE.ImageUtils.loadTexture('bild.jpg')} );
 var plane = new THREE.Mesh( geometry, material );
 plane.rotation.x +=90;
+plane.rotation.y +=90;
 scene.add( plane );
 
 	//////////////////////////////////////////////////////////////////////////////////
