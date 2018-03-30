@@ -18,6 +18,9 @@
 		  <a-assets>
 			<img id="ground" src="bild.jpg">
 		</a-assets>
+		<a-assets>
+			<img id="broken" src="bild-broken.jpg">
+		</a-assets>
 		<a-marker preset='hiro'>
 		    <a-plane position="0 0 0" rotation="-90 0 0" width="3" height="3" src="#ground"></a-plane>
 		</a-marker>
@@ -42,6 +45,11 @@
 		<a-marker type='barcode' value='4'>
 			<a-plane position="0 0 0" rotation="-90 0 0" width="22" height="22" src="#ground"></a-plane>
 		</a-marker>
+		
+		<a-marker type='barcode' value='5'>
+			<a-plane position="0 0 0" rotation="-90 0 0" width="3" height="3" src="#broken"></a-plane>
+		</a-marker>
+		
 		
 		<!-- add a simple camera -->
 		<a-entity camera></a-entity>
