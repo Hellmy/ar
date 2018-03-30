@@ -122,11 +122,8 @@ var geometry = new THREE.PlaneGeometry( 3, 3, 3 );
 var material = new THREE.MeshBasicMaterial( {side: THREE.DoubleSide,
 		map : THREE.ImageUtils.loadTexture('bild.jpg')} );
 var plane = new THREE.Mesh( geometry, material );
-
+plane.rotation.x -=90;
 scene.add( plane );
-
-var axesHelper = new THREE.AxesHelper( 5 );
-scene.add( axesHelper );
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		render the whole thing on the page
