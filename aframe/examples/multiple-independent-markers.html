@@ -15,8 +15,11 @@
 		</a-marker> -->
 
 		<!-- handle hiro marker -->
+		  <a-assets>
+			<img id="ground" src="bild.jpg">
+		</a-assets>
 		<a-marker preset='hiro'>
-		    <a-plane position="0 0 0" rotation="180 0 0" width="3" height="3" color="#7BC8A4"></a-plane>
+		    <a-plane position="0 0 0" rotation="-90 0 0" width="3" height="3" src="#ground"></a-plane>
 		</a-marker>
 
 		<!-- handle matrix marker -->
