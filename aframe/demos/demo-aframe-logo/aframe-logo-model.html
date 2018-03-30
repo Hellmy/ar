@@ -13,20 +13,20 @@
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 </div>
 	<!-- <a-scene embedded arjs='sourceType: video; sourceUrl:../../data/videos/headtracking.mp4;'> -->
-	<a-scene embedded arjs='sourceType: webcam'>
+	<!-- detection mode needed for Barcodes!  -->
+	<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 	
         <!-- <a-scene embedded arjs='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;'> -->		
 	<!-- <a-scene arjs='sourceType: image; sourceUrl:../../data/images/screenshot.png'> -->
 	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
 
-		<a-assets>
-			<a-asset-item id="assetAframe" src="models/ply/aframe.ply"></a-asset-item>
-		</a-assets>
+	<a-marker preset='hiro'>
+		<a-plane position="-2 -4 0" rotation="-90 0 0" width="1" height="1" color="#7BC8A4"></a-plane>
+		<a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:pink;'>
+		</a-box>
+	
+	</a-marker>
 
-		<!-- <a-marker type='unknown'> -->
-		<a-entity ply-model="src: #assetAframe" rotation='-90 0 0'scale='0.02 0.02 0.02'></a-entity>
-
-		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
 </html>
